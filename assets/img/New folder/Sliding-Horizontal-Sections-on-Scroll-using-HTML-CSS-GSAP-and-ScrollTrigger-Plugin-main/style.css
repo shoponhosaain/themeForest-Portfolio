@@ -1,0 +1,165 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 1s linear; /* Changed 'linear 1s' to 'all 0.5s linear' */
+  font-family: 'Madimi One', Courier, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* custom colors */
+.prime-color {
+  color: #5e43ff;
+}
+
+.prime-bg {
+  background-color: #5e43ff;
+}
+
+.dark {
+  color: #000;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.white {
+  color: white;
+}
+
+/* text */
+.list-style {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.text-vsm {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.text-lg {
+  font-size: 32px;
+}
+
+.text-xl {
+  font-size: 36px;
+}
+
+.text-xxl {
+  font-size: 86px;
+  line-height: 120px;
+}
+
+/* nav */
+header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+/* buttons */
+.btn-nav{
+  padding: 1rem 2rem;
+  background-color: #000;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+
+section {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  background-color: #1a200e;
+  color: oldlace;
+}
+section > h1 {
+  font-size: 200px;
+  padding: 50px;
+}
+
+.slider-container {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  min-width: 100%;
+  width: fit-content;
+  align-items: flex-start;
+}
+
+.slider-container > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6d13a;
+  border: 1px solid black;
+}
+
+
+.slider-container > div > h1 {
+  font-size: 100px;
+  text-align: center;
+}

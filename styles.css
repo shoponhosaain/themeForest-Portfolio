@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 1s linear; /* Changed 'linear 1s' to 'all 0.5s linear' */
+  font-family: "noto serif", Courier, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* custom colors */
+.prime-color {
+  color: #5e43ff !important;
+}
+
+.prime-bg {
+  background-color: #5e43ff;
+}
+
+.dark {
+  color: #000 !important;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.white {
+  color: white;
+}
+
+/* text */
+.list-style {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.text-vsm {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.text-lg {
+  font-size: 32px;
+}
+
+.text-xl {
+  font-size: 36px;
+}
+
+.text-xxl {
+  font-size: 86px;
+  line-height: 120px;
+}
+.font-bolt {
+  font-weight: bold;
+}
+.font-light {
+  font-weight: 400;
+}
+/* nav */
+header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+/* buttons */
+.btn-nav {
+  padding: 1rem 2rem;
+  background-color: #000;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.button-skill {
+  padding: 0.3rem 1rem;
+  background: transparent;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+  border: 2px solid #5e43ff;
+}
+
+/* buttons animation */
+.hero-btn {
+  margin-top: 7rem;
+  border-radius: 1rem;
+  padding: 1.7rem 6rem !important; /* Initial padding */
+  transition: padding 0.1s ease; /* Add transition effect for smoother change */
+  background: #5e43ff !important;
+  border: none !important;
+  color: #f1f1f1;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.hero {
+  transition: background-color 0.1s ease; /* Add transition effect for smoother change */
+}
+
+.background-change {
+  background-color: #5e43ff;
+  transition: background-color 0.1s ease; /* Optional: Add transition effect */
+}
+
+/* Add CSS transitions for smooth animation */
+/* Add CSS transitions for smooth animation */
+.slide h4,
+.slide p {
+  transition: all 0.5s ease; /* Increased duration to slow down the transition */
+}
+
+/* Adjust styles for the active slide */
+.slide.active h4,
+.slide.active p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide non-active slides */
+.slide h4,
+.slide p {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card-ani {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card-ani.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heading {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.heading.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.services.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-testimonial {
+  background-color: #231834;
+  height: 380px;
+}
+.home-testimonial-bottom {
+  background-color: #f8f8f8;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 130px;
+  top: 190px;
+}
+.home-testimonial h3 {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.home-testimonial h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+.testimonial-inner {
+  position: relative;
+  top: -174px;
+}
+.testimonial-pos {
+  position: relative;
+  top: 24px;
+}
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px;
+}
+.color-grey-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.testimonial-inner img.tm-people {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+}
+.link-name {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.link-position {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  color: #6c83a2;
+}
+.home-testimonial{background-color: #231834;height: 380px}
+.home-testimonial-bottom{background-color: #f8f8f8;transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top: 20px;margin-bottom: 0px;position: relative;height: 130px;top: 190px}
+.home-testimonial h3{color: var(--orange);font-size: 14px;font-weight: 500;text-transform: uppercase}
+.home-testimonial h2{color: white;font-size: 28px;font-weight: 700}
+.testimonial-inner{position: relative;top: -174px}
+.testimonial-pos{position: relative;top: 24px}
+.testimonial-inner .tour-desc{border-radius: 5px;padding: 40px}
+.color-grey-3{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}
+.testimonial-inner img
+.tm-people{width: 60px;height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-o-object-fit: cover;object-fit: cover;max-width: none}
+.link-name{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}
+.link-position{font-family: "Montserrat", Sans-serif;font-size: 12px;color: #6c83a2}
